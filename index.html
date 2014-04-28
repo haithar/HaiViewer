@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HaiViewer</title>
+<link rel="stylesheet" type="text/css" href="hai.viewer.css" />
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="hai.viewer.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+	var settings = {
+		target: '#haiViewer',
+		source: 'https://haithar.net/cvp/VGJuNQ7UzoMj1I8I?callback=?',
+		refreshInterval: 5,
+	};
+
+	hai = new HaiViewer(settings);
+});
+</script>
+<style type="text/css">
+html, body {
+	margin: 0px;
+	padding: 0px;
+
+	background: #333;
+	font-family: arial, sans-serif;
+}
+
+#container {
+	width: 960px;
+	margin: 50px auto;
+	padding: 25px;
+
+	background: #fafafa;
+	color: #333;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#content {
+	float: left;
+}
+
+h3 {
+	margin-top: 0px;
+}
+
+#haiViewer {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="content">
+		<h3>HaiViewer</h3>
+		HaiViewer is a simple javascript based Channel View Protocol client.<Br/>
+		</div>
+		<div id="haiViewer"></div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

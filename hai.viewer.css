@@ -1,0 +1,136 @@
+/* HaiViewer
+ * 2014 HaiThar.net
+ * Released under the terms of the MIT license.
+ */
+
+/* Layout css */
+.haiViewerBox {
+	height: 300px;
+	width: 300px;
+	padding: 5px;
+}
+
+.haiViewerContainer {
+	overflow-y: scroll;
+	height: 272px;
+	padding: 3px;
+}
+
+.haiViewerContainer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.haiViewerContainer ul li {
+	padding: 2px;
+	margin-left: 15px;
+}
+
+/* Remove margin from root channel */
+.haiViewerContainer ul:first-child > li {
+	margin: 0px;
+}
+
+.haiViewerContainer .statusIcon {
+	float: right;
+	padding: 0;
+	margin: 0;
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+	line-height: 14px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.haiViewerContainer .idle {
+	background-position: 0 -16px;
+	float: left;
+}
+
+.haiViewerContainer .active {
+	background-position: 0 -32px;
+	float: left;
+}
+
+.haiViewerContainer .channelIcon {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding: 0;
+	margin: 0;
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+	line-height: 14px;
+	float: left;
+}
+
+.haiViewerContainer .authenticated {
+	background-position: 0 -48px;
+}
+
+.haiViewerContainer .deaf {
+	background-position: 0 -64px;
+}
+
+.haiViewerContainer .mute {
+	background-position: 0 -80px;
+}
+
+/* Style css */
+
+/* Main box / border */
+.haiViewerBox {
+	height: 300px;
+	width: 300px;
+
+	background: #333;
+	color: #fafafa;
+	font-weight: bold;
+	font-family: arial, sans-serif;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Root channel title */
+.haiViewerBox a {
+	text-decoration: none;
+	color: #fafafa;
+	font-weight: bold;
+}
+
+/* User / Channel list */
+.haiViewerContainer {
+	/* height is independent of .haiViewerBox*/
+	height: 272px;
+
+	background: #fafafa;
+	color: #333;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Channel list items */
+.haiViewerContainer .channel {
+}
+
+/* User list items */
+.haiViewerContainer .user {
+	background: #eee;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* Status icons, Muted etc */
+.haiViewerContainer .statusIcon {
+	background-image: url('hai.viewer.png');
+}
+
+/* The channel icon. */
+.haiViewerContainer .channelIcon {
+	background-image: url('hai.viewer.png');
+}
