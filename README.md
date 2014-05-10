@@ -18,8 +18,7 @@ Next we need to place a div tag some where in your code for the channel viewer t
 Finally we need to create an instance of the HaiViewer and pass it some settings.
 Create an object with the viewer settings there are 3 different settings.
 
-source
-------
+### source
 This is the JSONP URL to your Channel Viewer Protocol (CVP), your mumble server provider should supply you with this URL.
 
 target - optional
