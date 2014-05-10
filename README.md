@@ -8,10 +8,8 @@ Website integration
 HaiViewer is easy to integrate into any website simply include jQuery, the hai.viewer.js code and the base style sheet hai.viewer.css.
 
 	<link rel="stylesheet" type="text/css" href="hai.viewer.css" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js">
-	</script>
-	<script type="text/javascript" src="hai.viewer.js">
-	</script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>
+	<script type="text/javascript" src="hai.viewer.js"> </script>
 
 Next we need to place a div tag some where in your code for the channel viewer to display in.
 
@@ -34,19 +32,17 @@ refreshInterval - optional
 This is how often the viewer will update, generally the default is sufficient.
 Defaults to 5
 
-`
-<script type="text/javascript">
-$( document ).ready(function() {
-	var settings = {
-		source: 'https://haithar.net/cvp/VGJuYeSJZgeJGoWf?callback=?',
-		target: '#haiViewer',
-		refreshInterval: 5,
-	};
-
-	hai = new HaiViewer(settings);
-});
-</script>
-`
+	<script type="text/javascript">
+	$( document ).ready(function() {
+		var settings = {
+			source: 'https://haithar.net/cvp/VGJuYeSJZgeJGoWf?callback=?',
+			target: '#haiViewer',
+			refreshInterval: 5,
+		};
+	
+		hai = new HaiViewer(settings);
+	});
+	</script>
 
 
 Style
