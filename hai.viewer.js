@@ -7,6 +7,12 @@ function HaiViewer(settings) {
 	var self = this;
 	self.settings = settings;
 
+	if (self.settings.refreshInterval === undefined)
+		self.settings.refreshInterval = 5;
+
+	if (self.settings.target === undefined)
+		self.settings.target = '#haiViewer';
+
 	if (self.settings.refreshInterval < 1)
 		self.settings.refreshInterval = 1;
 
