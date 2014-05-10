@@ -1,7 +1,7 @@
 HaiViewer
 =========
 
-HaiViewer is a simple JavaScript based Channel Viewer Protocol client created by (HaiThar.net)[https://HaiThar.net].
+HaiViewer is a simple JavaScript based Channel Viewer Protocol client created by https://HaiThar.net.
 
 Website integration
 -------------------
@@ -58,4 +58,4 @@ The viewer requires one sprite image hai.viewer.png which contains the icons in 
 
 Licence
 -------
-All contents of this project is released under the (MIT License)[LICENSE] which was distributed with this code. This allows you to use, distribute and/or modify this code and/or images for free or for pay.
+All contents of this project is released under the MIT License which was distributed with this code. This allows you to use, distribute and/or modify this code and/or images for free or for pay.
